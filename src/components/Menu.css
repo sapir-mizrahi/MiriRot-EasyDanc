@@ -1,0 +1,36 @@
+.logo-easy-denc {
+width: 92px;
+    height: 112px;
+    margin-top: 2px;
+    float: right;
+}
+
+.nuv-bar-main {
+    background-color: #bdbdbd !important;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.css-1m20j1c-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: white !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px #EFA9B8;
+}
+
+.makeStyles-tab-2 {
+    color: white !important;
+}
+
+.MuiTab-root {
+    color: white !important;
+}
+
+.css-11yukd5-MuiTabs-indicator {
+    background-color: #EFA9B8 !important;
+}
+
+.all-tabs {
+    width: 30%;
+}
