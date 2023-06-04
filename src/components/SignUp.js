@@ -54,6 +54,7 @@ export default function SignUp() {
         const response = await signUp(userData)
         if (response.status === 200) {
           localStorage.setItem("user", { name: res?.data?.user?.userName, id: res?.data?.user?.id })
+          localStorage.setItem("manager", false)
           navigate('/videoscreen');
         }
       }

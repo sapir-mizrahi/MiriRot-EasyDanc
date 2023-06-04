@@ -30,3 +30,8 @@ export const getHistoryUser = async (userId) => {
     const res = await axios.get(`${apiUrl}/getHistoryUser/${userId}`);
     return res;
 }
+
+export const addLocalVideo = async (name, localLocation) => {
+    const res = await axios.post(`${apiUrl}/addvideo/${name}/${localLocation}`);
+    return res;
+}

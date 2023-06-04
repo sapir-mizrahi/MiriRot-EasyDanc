@@ -55,7 +55,12 @@ export const  Menu =()=> {
             to="history"
             className=''
           />
-       
+       <Tab
+            label="Add Video"
+            component={Link}
+            to="addvideo"
+            className=''
+          />
         </Tabs>
         {localStorage.userName == "" && <div onClick={() => logoutUser()} style={{ color: '#EFA9B8', cursor: 'pointer', fontWeight: 'bold', textShadow: '1px 1px 2px #4c4c4c, 0 0 25px #88888d, 0 0 5px #7b7a7a' }}>Logout <RiLogoutCircleRLine style={{ color: '#EFA9B8', cursor: 'pointer', fontWeight: 'bold', textShadow: '1px 1px 2px #4c4c4c, 0 0 25px #88888d, 0 0 5px #7b7a7a !important' }} /></div>}
 

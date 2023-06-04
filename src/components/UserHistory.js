@@ -17,12 +17,12 @@ export default function UserHistory() {
         { name: "Video Number 3", date: '22/05/2034' }
     ])
 
-    useEffect(async () => {
-        const res = await getHistoryUser(localStorage.user.id)
-        if (res.status === 200) {
-            setHistoryVideoArr(res?.data)
-        }
-    }, [])
+    // useEffect(async () => {
+    //     const res = await getHistoryUser(localStorage.user.id)
+    //     if (res.status === 200) {
+    //         setHistoryVideoArr(res?.data)
+    //     }
+    // }, [])
     return (
         <>
             <div className='mainHistoryDiv' >

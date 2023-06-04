@@ -73,6 +73,7 @@ export default function SignIn() {
     const data = new FormData(event.currentTarget);
     if (data.get('name') === "user@example.com" && data.get("password") === 'password') {
       localStorage.setItem("user", { name: "Miri Rot", id: "1" })
+      localStorage.setItem("manager", true)
       navigate("/videoscreen")
     }
     else {
@@ -84,6 +85,7 @@ export default function SignIn() {
       if (res.status === 200) {
         if (res.data !== null) {
           localStorage.setItem("user", { name: res?.data?.user?.userName, id: res?.data?.user?.id })
+          localStorage.setItem("manager", false)
           navigate("/videoscreen")
         }
         else {
